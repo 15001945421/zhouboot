@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="true" scanPeriod="60 seconds">
+    <contextName>boot-test</contextName>
+    <appender name="Console-Appender" class="ch.qos.logback.core.ConsoleAppender">
+        <layout>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%-5level] %logger{50} - %msg%n</pattern>
+        </layout>
+    </appender>
+    <appender name="Async-Console-IN" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="Console-Appender" />
+    </appender>
+
+    <appender name="BIZ_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>d:/boottestlog/boot_error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>d:/boottestlog/boot_error-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>100MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%-5level] %logger{50} - %msg%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+    <appender name="Async-Appender-ERROR" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="BIZ_ERROR" />
+    </appender>
+    
+    <appender name="BIZ_INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>d:/boottestlog/boot_info.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>d:/boottestlog/boot_info-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>100MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%-5level] %logger{50} - %msg%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+     <appender name="Async-Appender-INFO" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="BIZ_INFO" />
+    </appender>
+    
+
+    <logger name="org.springframework"  level="error" additivity="false">
+        <appender-ref ref="Async-Appender-ERROR" />
+    </logger>
+
+    <root level="DEBUG">
+        <appender-ref ref="Async-Console-IN" />
+        <appender-ref ref="Async-Appender-INFO" />
+        <appender-ref ref="Async-Appender-ERROR" />
+    </root>
+</configuration>

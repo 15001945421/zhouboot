@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhou.bot.zhoubottest.mapper.ProductMapper" >
+
+  <!--  查找提醒信息是否存在 -->
+  <select id="getProName" parameterType="long" resultType="java.lang.String">
+    select 
+        name
+    from product
+	    where id = #{id}
+  </select>
+
+  <update id="updateProName" parameterType="long" >
+     update product set name="zhoum"  where id = #{id}
+  </update>
+  
+  
+</mapper>

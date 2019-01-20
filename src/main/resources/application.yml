@@ -1,0 +1,37 @@
+#服务启动设置端口
+server:
+  port: 8080
+
+#mysql主备配置，可以加入更多自定义的属性，注意yaml预发规则
+mysql:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    readSize: 2
+    master:
+      url: jdbc:mysql://127.0.0.1:3306/test
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+    slave:
+      url: jdbc:mysql://127.0.0.1:3306/test2
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+
+#mybaits配置，可以在这里加入自定义属性，通过java配置进行初始化
+mybatis:
+  mapper-locations: classpath:sqlxml/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.zhou.bot.zhoubottest.model  # 注意：对应实体类的路径
+  configLocation: classpath:spring-mybatis-config.xml
+
+#DB分页插件分页插件
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+#日志配置
+logging:
+  config: classpath:logback.xml
+  path: d:/boottestlog
