@@ -2,6 +2,7 @@ package com.zhou.bot.zhoubottest.controller;
 
 import com.zhou.bot.zhoubottest.mapper.ProductMapper;
 import com.zhou.bot.zhoubottest.service.ProductService;
+import com.zhou.bot.zhoubottest.utils.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +13,9 @@ public class ProductController {
 
     @Autowired
     private ProductService productService;
+
+    @Autowired
+    private RedisUtils redisUtils;
 
     @RequestMapping("/index/{id}")
     public String master(@PathVariable("id") Long id ) {
@@ -28,4 +32,18 @@ public class ProductController {
         System.out.println(productService.slaveProductInfo(id));
         return "Hello World";
     }
+
+    @RequestMapping("/redis/{key}/{value}")
+    public String redis(@PathVariable("key") String key, @PathVariable("value") String value) {
+        redisUtils.setKey(key,value,1L);
+        System.out.println((String)redisUtils.getKey(key));
+        return "redis";
+    }
+
+    /*@RequestMapping("/redis/{key}/{value}")
+    public String redisList(@PathVariable("key") String key, @PathVariable("value") String value) {
+        redisUtils.setKey(key,value,1L);
+        System.out.println(redisUtils.getKey(key));
+        return "redis";
+    }*/
 }
