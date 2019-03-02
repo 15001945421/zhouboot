@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhou.bot.zhoubottest.mapper.FileKeyWordMapper" >
+
+  <!--  查找提醒信息是否存在 -->
+  <select id="getKeyWordNum" parameterType="com.zhou.bot.zhoubottest.model.KeyWordInfo" resultType="java.lang.String">
+    select 
+        key_word
+    from file_key_word
+	    where key_word = #{keyword} and buss_type = #{bussType}
+  </select>
+
+  <update id="updateKeyWordNum" parameterType="com.zhou.bot.zhoubottest.model.KeyWordInfo" >
+     update file_key_word set num=num+1  where key_word = #{keyword} and buss_type = #{bussType}
+  </update>
+
+    <!--  查找提醒信息是否存在 -->
+    <select id="countKeyWordNum" parameterType="com.zhou.bot.zhoubottest.model.KeyWordInfo" resultType="int">
+    select
+        num
+    from file_key_word
+	    where key_word = #{keyword} and buss_type = #{bussType}
+   </select>
+
+    <insert id="insertKeyWord" parameterType="com.zhou.bot.zhoubottest.model.KeyWordInfo" useGeneratedKeys="true" keyProperty="id">
+    insert into file_key_word (id, key_word, num, buss_type)
+    values (#{id}, #{keyword},#{num},#{bussType})
+    </insert>
+
+</mapper>
