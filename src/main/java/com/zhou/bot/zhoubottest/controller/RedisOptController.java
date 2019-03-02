@@ -224,4 +224,11 @@ public class RedisOptController {
         Map<Object,Double> maps = redisUtils.redisZSetByRangeWithScores(key,Long.valueOf(v1),Long.valueOf(v2));
         return "key:"+key+" 集合值为："+JSON.toJSONString(maps);
     }
+
+    @RequestMapping("/lockOpt/{key}/{expire}")
+    public String lockOpt(@PathVariable("key") String key,
+                          @PathVariable("expire") String expire){
+        boolean islock = redisUtils.lock(key,Long.valueOf(expire));
+        return "key:"+key+" 本次锁结果："+islock;
+    }
 }

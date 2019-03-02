@@ -259,6 +259,14 @@ public class RedisUtils {
     //***************zset操作********************/
 
     //***************setNX*********************/
+    /**
+     *@Description setNX操作:参考链接：https://www.jianshu.com/p/6dd656e7051f
+     *@Param [key, expire]
+     *@Return boolean
+     *@Author ZhouYouMing
+     *@Date 2019/3/2
+     *@Time 16:00
+     */
     public boolean lock(String key,Long expire) {
         String lock = "LOCK_PREFIX_" + key;
         return (Boolean) redisTemplate.execute((RedisCallback) connection -> {
