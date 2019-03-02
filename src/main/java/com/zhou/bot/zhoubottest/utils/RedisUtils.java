@@ -260,7 +260,7 @@ public class RedisUtils {
 
     //***************setNX*********************/
     public boolean lock(String key,Long expire) {
-        String lock = "LOCK_PREFIX" + key;
+        String lock = "LOCK_PREFIX_" + key;
         return (Boolean) redisTemplate.execute((RedisCallback) connection -> {
             long expireAt = System.currentTimeMillis() + expire + 1;
             Boolean acquire = connection.setNX(lock.getBytes(), String.valueOf(expireAt).getBytes());
