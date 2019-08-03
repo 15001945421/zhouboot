@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.aspectj:aspectjweaver:1.9.2">
     <CLASSES>
-      <root url="jar://D:/softwall install/maven-repository/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar!/" />
+      <root url="jar://D:/Software/apache-maven-repository-3.3.9/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://D:/softwall install/maven-repository/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2-javadoc.jar!/" />
+      <root url="jar://D:/Software/apache-maven-repository-3.3.9/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://D:/softwall install/maven-repository/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2-sources.jar!/" />
+      <root url="jar://D:/Software/apache-maven-repository-3.3.9/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

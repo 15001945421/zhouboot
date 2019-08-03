@@ -1,0 +1,28 @@
+Object:
+
+1)wait:该方法可以使调用该线程的方法 【释放共享资源的锁】，然后从运行状态退出，进入等待队列，直到再次被唤醒。
+2)notify：方法可以随机唤醒等待队列中等待同一共享资源的一个线程，并使得该线程退出等待状态，进入可运行状态
+3)notifyAll:方法可以使所有正在等待队列中等待同一共享资源的全部线程从等待状态退出，进入可运行状态
+4)wait()释放锁 、 notify()不释放锁
+5)yield方法和sleep方法一样，在暂停的过程当中，并不会释放锁,yield方法和wait方法虽然都可以让线程暂停，
+但是执行后线程的状态不一样。wait方法让线程进入到block状态，yield让线程进入到runnable状态。
+因此wait执行后的线程需要被唤醒。而yield方法执行后的线程不需要唤醒，可以直接再次获取CPU时间并执行。
+6)join:有A、B 2个线程，在 A线程内执行 B线程.join(),表示A线程需要等B线程执行完成后，才执行自己的
+参考链接：https://www.cnblogs.com/skywang12345/p/3479275.html
+
+其他参考链接：https://blog.csdn.net/shikenian520/article/details/80319384
+
+
+
+
+fork/join:参考链接：https://www.cnblogs.com/cjsblog/p/9078341.html
+
+
+对象锁与类锁：
+1）对于同一个类A，线程1争夺A对象实例的对象锁，线程2争夺类A的类锁(如静态同步方法)，这两者不存在竞争关系。也就说对象锁和类锁互补干预内政
+
+
+
+ThreadLocal:参考链接 https://allenwu.itscoder.com/threadlocal-source
+
+线程池参考：http://www.54tianzhisheng.cn/2017/07/29/ThreadPool/

@@ -1,0 +1,14 @@
+
+字节流输出：程序 ---> 字节流（直接操作文件） ---> 文件
+
+字符输出流：程序 ---> |字符流 ---> 缓存 |---> 文件
+                   |数据先放在缓存之  |
+                   | 后，再从缓存写入 |
+                   |文件            |
+
+字符流：特别注意一点,由于关闭字符流时会强制性地将缓冲区中的内容进行输出，但是如果没有关闭，缓冲区中的内容是无法输出的。
+如果不想在关闭时再输出字符流的内容也行，使用Writer的flush()方法就可以了。
+
+字符流的原理:字符流本身就是一种特殊的字节流，字节流和字符流的转换是以InputStreamReader和OutputStreamWriter为媒介的，
+InputStreamReader可以将一个字节流中的字节解码（StreamDecoder）成字符，OutputStreamWriter可以将写入的字符编码（StreamEncoder）
+成字节后写入一个字节流,其内部还是通过转换流（InputStreamReader/OutputStreamWriter）实现的。
