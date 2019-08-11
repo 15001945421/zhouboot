@@ -18,11 +18,11 @@ public class Car {
     private double     price;
     private String    color;
 
-    /*public Car(double price, String color)
+    public Car(double price, String color)
     {
         this.price = price;
         this.color = color;
-    }*/
+    }
 
     public double getPrice() {
         return price;
@@ -45,18 +45,5 @@ public class Car {
         return "This car is a " + this.color + " car, costs $" + price;
     }
 
-    public static void main(String[] args){
-        Car c1 = new Car();
-        Map<String,Object> map = new HashMap<>();
-        map.put("price",1);
-        Car cv = JSON.parseObject("{\"price\":\"5\"}",Car.class);
-        System.out.println(cv.getPrice());
-        /*for(Field ff : car.getClass().getDeclaredFields()){
-            if(map.containsKey(ff.getName())){
-                System.out.println(map.get(ff.getName()));
-            }
-        }*/
-        //System.out.println(JSON.toJSONString(car.getClass().getDeclaredFields()[2].getName()));
 
-    }
 }
