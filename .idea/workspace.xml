@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c604a8e2-8e6f-4144-af92-c5a8ebd8be31" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/otest/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/otest/Car.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +15,12 @@
     <session id="637052473">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="60" />
+          <entry key="project.closed" value="61" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="18" />
+          <entry key="project.open.time.1" value="19" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="6" />
           <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.2" value="10" />
@@ -33,13 +33,13 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.76" value="1" />
-          <entry key="project.opened" value="60" />
+          <entry key="project.opened" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="8" />
-          <entry key="java" value="99" />
+          <entry key="java" value="104" />
           <entry key="java-io" value="1" />
           <entry key="java-io学习笔记" value="1" />
           <entry key="java-thread" value="3" />
@@ -50,7 +50,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="8" />
-          <entry key="JAVA" value="99" />
+          <entry key="JAVA" value="104" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="9" />
           <entry key="YAML" value="3" />
@@ -58,7 +58,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="9699" />
+          <entry key="java" value="11239" />
           <entry key="java-io" value="54" />
           <entry key="java-io学习笔记" value="186" />
           <entry key="java-thread" value="252" />
@@ -68,7 +68,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9699" />
+          <entry key="JAVA" value="11239" />
           <entry key="PLAIN_TEXT" value="492" />
           <entry key="XML" value="102" />
           <entry key="YAML" value="197" />
@@ -78,51 +78,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/MyThread30_0.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/FutureR1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/futuretest/FutureR2.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/threadpooltest/ConnTestPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/futuretest/FutureT1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="416">
+              <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#350#366#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/futuretest/FutureR1.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/threadpooltest/ThreadPool_T1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="858">
+              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -209,6 +184,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/futuretest/FutureT1.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/futuretest/FutureR1.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/futuretest/FutureR2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/threadpooltest/ConnDri.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/threadpooltest/ThreadPool_T1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/threadpooltest/ConnTestPool.java" />
       </list>
     </option>
   </component>
@@ -305,6 +283,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -376,21 +356,19 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="zhoubottest" type="462c0819:PsiDirectoryNode" />
               <item name="threadtest" type="462c0819:PsiDirectoryNode" />
-              <item name="futuretest" type="462c0819:PsiDirectoryNode" />
+              <item name="threadpooltest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565352653493" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565495330652" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../myyhd" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -425,7 +403,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FutureT1">
+  <component name="RunManager" selected="Application.ThreadPool_T1">
     <configuration name="At" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhou.bot.zhoubottest.annotation.test.At" />
       <module name="zhouboot" />
@@ -478,12 +456,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhou.bot.zhoubottest.annotation.test.PersonTest1" />
+    <configuration name="ThreadPool_T1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhou.bot.zhoubottest.threadtest.threadpooltest.ThreadPool_T1" />
       <module name="zhouboot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhou.bot.zhoubottest.annotation.test.*" />
+          <option name="PATTERN" value="com.zhou.bot.zhoubottest.threadtest.threadpooltest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -492,19 +470,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PersonTest1" />
       <item itemvalue="Application.At" />
       <item itemvalue="Application.Nm2" />
       <item itemvalue="Application.Car" />
       <item itemvalue="Application.FutureT1" />
+      <item itemvalue="Application.ThreadPool_T1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadPool_T1" />
         <item itemvalue="Application.FutureT1" />
         <item itemvalue="Application.Car" />
         <item itemvalue="Application.Nm2" />
         <item itemvalue="Application.At" />
-        <item itemvalue="Application.PersonTest1" />
       </list>
     </recent_temporary>
   </component>
@@ -578,17 +556,19 @@
       <workItem from="1564796055453" duration="415000" />
       <workItem from="1564896406773" duration="26000" />
       <workItem from="1565350437444" duration="2158000" />
+      <workItem from="1565487054566" duration="7542000" />
+      <workItem from="1565529027030" duration="1252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138935000" />
+    <option name="totallyTimeSpent" value="147729000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26019314" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26770386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -597,14 +577,14 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32901296" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3020937" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32842582" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30804077" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46998867" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32901296" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32842582" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32701895" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -694,38 +674,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/iotest/Sender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/iotest/Receiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/iotest/MainObjectInAndOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/iotest/MainReceiverSender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Software/jdk1.8/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="381" column="29" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1027,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/MyThread30_0.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Software/jdk1.8/src.zip!/java/util/concurrent/Future.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -1041,10 +986,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/MyThread30_0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/FutureR1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+          <caret line="21" column="5" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/futuretest/FutureT1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1055,21 +1017,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/futuretest/FutureT1.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/futuretest/FutureR2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="308">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Software/jdk1.8/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="381" column="29" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/threadpooltest/ConnDri.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#350#366#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/futuretest/FutureR2.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/threadpooltest/ConnTestPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        <state relative-caret-position="416">
+          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhou/bot/zhoubottest/threadtest/threadpooltest/ThreadPool_T1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
