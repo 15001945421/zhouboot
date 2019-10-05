@@ -4,7 +4,9 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -46,4 +48,12 @@ public class Car {
     }
 
 
+    public static void main(String[] args){
+        List<Integer> list = new ArrayList<>();
+        list.add(11);list.add(22);list.add(33);list.add(44);
+        Integer id = list.get(2);
+        list.remove(2);
+        list.add(0,id);
+        System.out.println(JSON.toJSONString(list));
+    }
 }

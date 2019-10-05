@@ -1,6 +1,7 @@
 package com.zhou.bot.zhoubottest.otest;
 
 import java.text.MessageFormat;
+import java.util.UUID;
 
 /**
  * @ClassName Sta
@@ -28,5 +29,7 @@ public class Sta {
      String ss = "pages/quiz/views/assistance/index?groupId={0}&act={1}";
      //System.out.println(MessageFormat.format(ss,123265864325L+"",456+"scdfg"));
         System.out.println(sss(ss,123265864,456+"scdfg"));
+
+        System.out.println(UUID.randomUUID().toString());
     }
 }
